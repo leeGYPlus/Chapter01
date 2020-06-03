@@ -1,4 +1,6 @@
 
+[原 Sample 的 README.md](../READMELog.md)
+
 
 ## 转换文件
 
@@ -49,7 +51,6 @@ Thread 0 (crashed)// crash 出现的线程
 
 ![](http://mmbiz.qpic.cn/mmbiz_png/tnZGrhTk4dcsX0ukLriaOfqkZbdJanumaJ7ehcKw5EeGytsSAy4tm3aqicTxvWDdmACkdKWw36Vp5RQgCvVYBwrg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-
 具体可以参见: [Android 平台 Native 代码的崩溃捕获机制及实现
 ](https://mp.weixin.qq.com/s/g-WzYF3wWAljok1XjPoo7w?)。
 
@@ -57,9 +58,12 @@ Thread 0 (crashed)// crash 出现的线程
 
 使用以下命令行：
 ```
-/Users/xxx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/bin/aarch64-linux-android-addr2line -f -C -e sample/build/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libcrash-lib.so 0x600
+/Users/xxx/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/bin/aarch64-linux-android-addr2line -f -C -e
+sample/build/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libcrash-lib.so 0x600
 
 ```
+
+00x600 即为 crash 发生位置的寄存器位置。
 
 则可以得到发生 crash 的位置：
 
