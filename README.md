@@ -1,5 +1,5 @@
 
-[原 Sample 的 README.md](./READMELog.md)
+[原 Sample 的 README.md](https://github.com/leeGYPlus/Chapter01/blob/master/READMELog.md)
 
 
 ## 转换文件
